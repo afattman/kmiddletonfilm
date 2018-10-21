@@ -1,0 +1,55 @@
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../../../favicon.ico')
+    link(rel='stylesheet', href='fontawesome.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='stylesheets/frontpage.css')
+
+    title Middleton Film
+    
+    style(type='text/css').
+        .navbaropq{
+        border: none;
+        border-radius: 0;
+        width:100%;
+        background-color: rgba(0,0,0,0.5);
+        }
+  body.text-center
+    .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+      header.masthead.mb-auto
+        .inner
+
+
+      main.inner.cover(role='main')
+        h1.main-title.from-top(style={color: 'white'}) KEVIN MIDDLETON
+        h2.subtitle.from-bottom(style={color: 'white'}) FILM DIRECTOR
+        p.lead(style={color: 'white'})
+         
+        p.lead
+          a.btn.btn-lg.btn-outline-light(href='/') Enter Site
+
+    .video-background
+        .video-foreground
+            iframe(src='https://player.vimeo.com/video/262433815?api=1&autoplay=1&&background=1&mute=1&loop=1')
+
+
+      footer.mastfoot.mt-auto
+        .inner
+          p
+           
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+    script(src='../../assets/js/vendor/popper.min.js')
+    script(src='../../dist/js/bootstrap.min.js')
+
