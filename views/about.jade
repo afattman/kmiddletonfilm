@@ -10,32 +10,15 @@ block content
 
     
     #myCarousel.carousel.slide(data-ride='carousel')
-      ol.carousel-indicators
-        li.active(data-target='#myCarousel', data-slide-to='0')
-        li(data-target='#myCarousel', data-slide-to='1')
-        li(data-target='#myCarousel', data-slide-to='2')
+    
       .carousel-inner
         .carousel-item.active
-          img.first-slide(src='images/AboutMe.jpg', alt='First slide', width= '100%')
+          img.first-slide(src='images/stanleyparkresize.jpg', alt='First slide', width= '100%')
           .container
-            .carousel-caption.text-left
+            
 
-        .carousel-item
-          img.second-slide(src='images/LowerResTest.jpg', alt='Second slide', width= '100%')
-          .container
-            .carousel-caption
 
-        .carousel-item
-          img.third-slide(src='images/stanleypark.jpg', alt='Third slide' width= '100%')
-          .container
-            .carousel-caption.text-right
-
-      a.carousel-control-prev(href='#myCarousel', role='button', data-slide='prev')
-        span.carousel-control-prev-icon(aria-hidden='true')
-        span.sr-only Previous
-      a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
-        span.carousel-control-next-icon(aria-hidden='true')
-        span.sr-only Next
+   
     //
       Marketing messaging and featurettes
       ==================================================
@@ -48,28 +31,24 @@ block content
         .row.featurette
           .col-md-7
             h2.featurette-heading
-              | Kevin is a director from Western Massachusetts currently living in Los Angeles.
-              span.text-muted He is pursuing a graduate degree at USC School of Cinematic Arts.
+              |Kevin is a director from Western  
+              span.text-muted 
             p.lead
-              | While earning his BA at the University of Massachusetts Amherst, Kevin had the experience of studying abroad for a 
-              |semester at the Film & TV School of the Academy of Performing Arts in Prague (FAMU).
-              |He credits this semester for having a monumental impact on his filmmaking style, by
-              |incorporating elements of European cinema into his own works.
+                |Massachusetts, currently living in Los Angeles. He is pursuing a graduate degree at USC School of Cinematic Arts.
           .col-md-5
-            img.featurette-image.img-fluid.mx-auto(src='images/houseviewshot.jpg', alt='Generic placeholder image')
+            img.featurette-image.img-fluid.mx-auto(src='images/AboutMeresize.jpg', alt='Generic placeholder image')
         hr.featurette-divider
         .row.featurette
           .col-md-7.order-md-2
             h2.featurette-heading
-              | Oh yeah, it's that good. 
-              span.text-muted See for yourself.
+              | While earning his BA at the University of
             p.lead
-              | While earning his BA at the University of Massachusetts Amherst, Kevin had the experience of studying abroad for a 
+              |Massachusetts Amherst, Kevin had the experience of studying abroad for a 
               |semester at the Film & TV School of the Academy of Performing Arts in Prague (FAMU).
               |He credits this semester for having a monumental impact on his filmmaking style, by
               |incorporating elements of European cinema into his own works.
           .col-md-5.order-md-1
-            img.featurette-image.img-fluid.mx-auto(src='images/standgroup.jpg', alt='Generic placeholder image')
+            img.featurette-image.img-fluid.mx-auto(src='images/houseviewshot.jpg', alt='Generic placeholder image')
         hr.featurette-divider
         .row.featurette
           .col-md-7
@@ -82,10 +61,4 @@ block content
           Bootstrap core JavaScript
           ==================================================
         // Placed at the end of the document so the pages load faster
-        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
-        script.
-          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
-        script(src='/bower_components/jquery/dist/jquery.js')
-        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
-
-        script(src='../../dist/js/bootstrap.min.js')
+       

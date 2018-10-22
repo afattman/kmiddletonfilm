@@ -1,8 +1,16 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
     link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='fontawesome.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    
+    title Middleton Film
+
   body
     header
       nav.navbar.navbar-expand.navbar-dark.bg-dark
@@ -19,11 +27,19 @@ html
               a.nav-link(href='/about') 
                 | About
             li.nav-item
-              a.nav-link(href='#') 
+              a.nav-link(href='/contact') 
                 | Contact
       .container
       block content
       br
       hr
-      footer
+      footer.my-5.pt-5.text-muted.text-center.text-small
+        p.mb-1 © 2018-2019 Middleton Productions
+        ul.list-inline
+          li.list-inline-item
+            a(href='#') Privacy
+          li.list-inline-item
+            a(href='#') Terms
+          li.list-inline-item
+            a(href='#') Support
 

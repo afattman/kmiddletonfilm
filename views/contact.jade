@@ -1,0 +1,107 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../../../favicon.ico')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='fontawesome.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    
+    title Middleton Film
+
+
+  body.bg-light
+    nav.navbar.navbar-expand.navbar-dark.bg-dark
+        a.navbar-brand(href='/') Kevin Middleton | Director
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample02', aria-controls='navbarsExample02', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarsExample02.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/projects')
+                | Projects 
+              span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/about') 
+                | About
+            li.nav-item
+              a.nav-link(href='/contact') 
+                | Contact
+
+     #myCarousel.carousel.slide(data-ride='carousel')
+    
+      .carousel-inner
+        .carousel-item.active
+          img.first-slide(src='images/ContactMeresize.jpg', alt='First slide', width= '100%')
+          .container
+    .container
+      .py-5.text-center
+        h2 Contact Kevin
+        p.lead
+          |We'll never share your email with anyone else.
+      
+          form.needs-validation(novalidate='')
+          h4.mb-3
+            .row 
+                label(for='firstName') Name
+                input#firstName.form-control(type='text', placeholder='Marcus Aurelius', value='', required='')
+                .invalid-feedback
+                  | Valid first name is required.
+                
+                label(for='subject') Subject
+                input#lastName.form-control(type='text', placeholder='The Fall of Rome', value='', required='')
+                .invalid-feedback
+                  | Valid last name is required.
+                
+                label(for='email') Email
+                input#lastName.form-control(type='text', placeholder='MJoker672@ProbablyGmail.com', value='', required='')
+                .invalid-feedback
+                  | Please enter a valid email address.
+                
+                label(for='messages') Message
+                input#lastName.form-control(type='text', placeholder="Please send us reinforcements frantically, we're completely surrounded", value='', required='')
+                
+           
+            hr.mb-4
+            button.btn.btn-primary.btn-lg.btn-block(type='submit') Continue to checkout
+      footer.my-5.pt-5.text-muted.text-center.text-small
+        p.mb-1 © 2018-2019 Middleton Productions
+        ul.list-inline
+          li.list-inline-item
+            a(href='#') Privacy
+          li.list-inline-item
+            a(href='#') Terms
+          li.list-inline-item
+            a(href='#') Support
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+    script(src='../../assets/js/vendor/popper.min.js')
+    script(src='../../dist/js/bootstrap.min.js')
+    script(src='../../assets/js/vendor/holder.min.js')
+    script.
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+      }, false);
+      });
+      }, false);
+      })();

@@ -15,4 +15,8 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Middleton Film' });
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Middleton Film' });
+});
+
 module.exports = router;
