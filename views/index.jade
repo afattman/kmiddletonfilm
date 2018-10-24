@@ -5,13 +5,13 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='icon', href='../../../../favicon.ico')
+    link(rel='icon', href='images/favicon.PNG')
     link(rel='stylesheet', href='fontawesome.min.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
     link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='stylesheets/frontpage.css')
 
-    title Middleton Film
+    title K Middleton Film
     
     style(type='text/css').
         .navbaropq{
@@ -20,19 +20,54 @@ html(lang='en')
         width:100%;
         background-color: rgba(0,0,0,0.5);
         }
+        .opacity{
+        opacity: 0.6;
+        }
   body.text-center
+    nav.navbar.navbar-expand.navbar-dark.bg-dark.opacity
+          a.navbar-brand(href='/') Kevin Middleton | Director
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample02', aria-controls='navbarsExample02', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarsExample02.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                a.nav-link.text-white(href='/projects')
+                  | Projects 
+                span.sr-only (current)
+              li.nav-item
+                a.nav-link.text-white(href='/about') 
+                  | About
+              li.nav-item
+                a.nav-link.text-white(href='/contact') 
+                  | Contact
     .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
       header.masthead.mb-auto
-        .inner
-
-
-      main.inner.cover(role='main')
+        main.inner.cover(role='main')
         h1.main-title.from-top(style={color: 'white'}) KEVIN MIDDLETON
         h2.subtitle.from-bottom(style={color: 'white'}) FILM DIRECTOR
         p.lead(style={color: 'white'})
+        .inner
+    
          
         p.lead
-          a.btn.btn-lg.btn-outline-light(href='/projects') Enter Site
+          a.btn.btn-lg.btn-outline-light(href='/projects') Continue to Site
 
     .video-background
         .video-foreground

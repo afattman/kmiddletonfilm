@@ -1,0 +1,75 @@
+style(type='text/css').
+    .container-fluid{
+    text-align: center;
+    padding: 40px;
+    }
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='images/favicon.PNG')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='fontawesome.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    
+    title Middleton Film
+
+  body
+    header
+      nav.navbar.navbar-expand.navbar-dark.bg-dark
+        a.navbar-brand(href='/') Kevin Middleton | Director
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample02', aria-controls='navbarsExample02', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarsExample02.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/projects')
+                | Projects 
+              span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/about') 
+                | About
+            li.nav-item
+              a.nav-link(href='/contact') 
+                | Contact
+                
+    .container-fluid
+      iframe(src='https://player.vimeo.com/video/265905364?api=1&background=1&mute=0&loop=0&autoplay=0', width="1240" height="720", frameborder='0')
+                
+  .container.marketing
+        // /.col-lg-4
+        // /.row
+        // START THE FEATURETTES
+        hr.featurette-divider
+        .row.featurette
+          .col-md-7
+            h2.featurette-heading
+              |Cycles - (Spring, 2018)
+              span.text-muted 
+            br
+            p.lead
+                |Cycles is Kevins most recent short film, which is currently making its rounds in the film festival circuit. It recently premiered at the New Haven International Film Festival (New Haven, CT), and will be available to view online learly 2019.
+                br
+                br
+                
+                
+                
+                img.featurette-image.img-fluid.mx-auto(src='images/houseviewshot.jpg', alt='Generic placeholder image')
+          .col-md-5
+            img.featurette-image.img-fluid.mx-auto(src='images/CyclesPoster_Cropped.jpg', alt='Generic placeholder image')
+
+        
+        
+        hr
+      footer.my-5.pt-5.text-muted.text-center.text-small
+        p.mb-1 © 2018-2019 Middleton Productions
+        ul.list-inline
+          li.list-inline-item
+            a(href='#') Privacy
+          li.list-inline-item
+            a(href='#') Terms
+          li.list-inline-item
+            a(href='#') Support

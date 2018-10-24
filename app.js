@@ -26,6 +26,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.post('/http://localhost:8090/contacts', function(req, res) {
+ var contactAry = { id: 2,
+                  name: 'Fattman',
+                  email: 'Dudes101@Gmail.com',
+                  message: 'Yo kevin, biggest fan ever'}
+});
+
+app.get('/', function(req, res){
+  res.send('Hey');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
