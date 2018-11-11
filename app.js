@@ -3,12 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-//basic routes sent to inex.js and all other routing handled from there :)
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
-
+var contactrouter = require('./routes/contact');
+var bodyParser = require('body-parser');
 //Initilaizes the app as a whole
 var app = express();
 
@@ -21,10 +19,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(bodyParser.json()); //parses form data from client
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', contactrouter);
+
+//app.post('/add', addContact);
 
 app.post('/http://localhost:8090/contacts', function(req, res) {
  var contactAry = { id: 2,
@@ -53,5 +55,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
   
 });
+
 
 module.exports = app;
