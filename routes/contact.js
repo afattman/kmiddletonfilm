@@ -3,9 +3,11 @@ var router = express.Router();
 var mysql = require('mysql');
 
 var db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    database: "ksitedb"
+  host    : 'kevinmmiddleton.com',
+  port    : '3306',
+  user    : 'root',
+  password: '47435681Mo;404',
+  database: 'ksitedb'
   });
 
 
@@ -14,8 +16,8 @@ router.get('/contact', function(req, res, next) {
     res.render('contact', { title: 'Middleton Film' });
   });
 
-/*
-// This will fail in XAMPP is not running MySql
+  /*
+
   db.connect((err) => {
     if(err){
       throw err;
