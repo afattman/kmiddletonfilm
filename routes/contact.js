@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
+//var pg = require('pg');
 
+/*
 var db = mysql.createConnection({
   host    : '142.93.73.235',
   port    : '3306',
@@ -9,12 +11,30 @@ var db = mysql.createConnection({
   password: 'cookies335',
   database: 'ksitedb'
   });
-
-
+*/
+//DB connection string  //User:Password@servername/DB Name
+//var connect = "postgres://postgres:cookies335@localhost/KevinSite";
 
 router.get('/contact', function(req, res, next) {
     res.render('contact', { title: 'Middleton Film' });
   });
+/*
+router.get('/dashboard', function(req, res, next) {
+
+  pg.connect(connect, function(err, client, done) {
+    if(err) {
+      return console.error('Din work', err);
+    }
+    client.query('SELECT * FROM contacts', function(err, result) {
+        if(err) {
+          return console.error('error with querey', err);
+        }
+        res.render('contacts', {contacts: result.rows});
+        done();
+    });
+  });
+});
+*/
 
   /*
 
